@@ -1,15 +1,205 @@
-@import 'variables';
+@import 'variables.css';
+
+html, body, nav {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: var(--site-font);
+}
 
 body {
   background: url('../../dist/images/park.jpg') center/cover;
+  background-position-y: -26%;
+  background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
 }
 
+/*
+***************************************************************
+*>>>>>>>>>>>>>>>>>>>>>>>> TOP OF PAGE <<<<<<<<<<<<<<<<<<<<<<<<*
+***************************************************************
+*/
+
 nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height:  8.265%;
   background-color: var(--secondary-accent-color);
+  .dog-icon {
+    height: 81.44%;
+    margin-left: 1.5%;
+    margin-top: .5%;
+  }
 }
 
-.dog-icon {
-  width: 50px;
+.links-wrap {
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  li {
+    list-style: none;
+    justify-content: space-evenly;
+    a {
+      font-size: 150%;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 550;
+    }
+  }
+}
+
+/*
+****************************************************************
+*>>>>>>>>>>>>>>>>>>>>>>>> HERO SECTION <<<<<<<<<<<<<<<<<<<<<<<<*
+****************************************************************
+*/
+
+.hero-box {
+  height: 75%;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-items-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2%;
+  width: 100%;
+  height: 100%;
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-size: 335%;
+    font-weight: 350;
+  }
+  .hero-dog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65%;
+    object-fit: contain;
+    margin-top: 2%;
+    border-radius: 50%;
+    border: .35vw solid var(--main-accent-color);
+
+  }
+  h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    margin-top: 2%;
+    margin-bottom: 0;
+    padding: .25vw;
+    background-color: #fff;
+    border: .35vw solid var(--main-accent-color);
+    color: var(--main-accent-color);
+    font-weight: 400;
+  }
+}
+
+/*
+****************************************************************
+*>>>>>>>>>>>>>>>>>>>>>>>> MAIN CONTENT <<<<<<<<<<<<<<<<<<<<<<<<*
+****************************************************************
+*/
+
+.main-content-wrap {
+  width: 100%;
+  height: 75%;
+}
+
+.main-content-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 90%;
+  background-color: #fff;
+  article {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 2%;
+    height: 100%;
+    width: 25%;
+    h3 {
+      display: flex;
+      justify-content: center;
+      margin-top: 0;
+      margin-bottom: 5%;
+      font-size: 180%;
+      font-weight: 300;
+    }
+    img {
+      border-radius: 50%;
+      height: 50%;
+      object-fit: contain;
+      border: .25vw solid var(--main-accent-color);
+    }
+    p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5%;
+      margin-bottom: 0;
+      padding: 0;
+      font-size: 90%;
+      text-align: center;
+    }
+    button {
+    margin-top: 5%;
+    padding: .4vw;
+    background-color: #fff;
+    border: .35vw solid var(--main-accent-color);
+    color: var(--main-accent-color);
+    font-family: var(--site-font);
+    font-weight: 400;
+    font-size: 100%;
+    }
+  }
+}
+
+/*
+******************************************************************
+*>>>>>>>>>>>>>>>>>>>>>>>> FOOTER CONTENT <<<<<<<<<<<<<<<<<<<<<<<<*
+******************************************************************
+*/
+
+footer {
+  width: 100%;
+  height: 23vh;
+  background-color: var(--main-accent-color);
+}
+
+.footer-content-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  h4 {
+    color: #fff;
+    font-weight: 500;
+  }
+  .github {
+    text-decoration: underline;
+  }
+}
+
+.socials {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 25%;
 }
