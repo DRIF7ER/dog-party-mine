@@ -319,19 +319,209 @@ var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBP
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_variables_css__WEBPACK_IMPORTED_MODULE_2__["default"]);
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_3___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `body {
+___CSS_LOADER_EXPORT___.push([module.id, `html, body, nav {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: var(--site-font);
+}
+
+body {
   background: url(${___CSS_LOADER_URL_REPLACEMENT_0___}) center/cover;
+  background-position-y: -26%;
+  background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
 }
 
+/*
+***************************************************************
+*>>>>>>>>>>>>>>>>>>>>>>>> TOP OF PAGE <<<<<<<<<<<<<<<<<<<<<<<<*
+***************************************************************
+*/
+
 nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height:  8.265%;
   background-color: var(--secondary-accent-color);
+  .dog-icon {
+    height: 81.44%;
+    margin-left: 1.5%;
+    margin-top: .5%;
+  }
 }
 
-.dog-icon {
-  width: 50px;
-}`, "",{"version":3,"sources":["webpack://./src/css/index.css"],"names":[],"mappings":"AAEA;EACE,gEAA0D;EAC1D,aAAa;EACb,WAAW;AACb;;AAEA;EACE,+CAA+C;AACjD;;AAEA;EACE,WAAW;AACb","sourcesContent":["@import 'variables';\n\nbody {\n  background: url('../../dist/images/park.jpg') center/cover;\n  height: 100vh;\n  width: 100%;\n}\n\nnav {\n  background-color: var(--secondary-accent-color);\n}\n\n.dog-icon {\n  width: 50px;\n}"],"sourceRoot":""}]);
+.links-wrap {
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  li {
+    list-style: none;
+    justify-content: space-evenly;
+    a {
+      font-size: 150%;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 550;
+    }
+  }
+}
+
+/*
+****************************************************************
+*>>>>>>>>>>>>>>>>>>>>>>>> HERO SECTION <<<<<<<<<<<<<<<<<<<<<<<<*
+****************************************************************
+*/
+
+.hero-box {
+  height: 75%;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-items-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2%;
+  width: 100%;
+  height: 100%;
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-size: 335%;
+    font-weight: 350;
+  }
+  .hero-dog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65%;
+    object-fit: contain;
+    margin-top: 2%;
+    border-radius: 50%;
+    border: .35vw solid var(--main-accent-color);
+
+  }
+  h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    margin-top: 2%;
+    margin-bottom: 0;
+    padding: .25vw;
+    background-color: #fff;
+    border: .35vw solid var(--main-accent-color);
+    color: var(--main-accent-color);
+    font-weight: 400;
+  }
+}
+
+/*
+****************************************************************
+*>>>>>>>>>>>>>>>>>>>>>>>> MAIN CONTENT <<<<<<<<<<<<<<<<<<<<<<<<*
+****************************************************************
+*/
+
+.main-content-wrap {
+  width: 100%;
+  height: 75%;
+}
+
+.main-content-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 90%;
+  background-color: #fff;
+  article {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 2%;
+    height: 100%;
+    width: 25%;
+    h3 {
+      display: flex;
+      justify-content: center;
+      margin-top: 0;
+      margin-bottom: 5%;
+      font-size: 180%;
+      font-weight: 300;
+    }
+    img {
+      border-radius: 50%;
+      height: 50%;
+      object-fit: contain;
+      border: .25vw solid var(--main-accent-color);
+    }
+    p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5%;
+      margin-bottom: 0;
+      padding: 0;
+      font-size: 90%;
+      text-align: center;
+    }
+    button {
+    margin-top: 5%;
+    padding: .4vw;
+    background-color: #fff;
+    border: .35vw solid var(--main-accent-color);
+    color: var(--main-accent-color);
+    font-family: var(--site-font);
+    font-weight: 400;
+    font-size: 100%;
+    }
+  }
+}
+
+/*
+******************************************************************
+*>>>>>>>>>>>>>>>>>>>>>>>> FOOTER CONTENT <<<<<<<<<<<<<<<<<<<<<<<<*
+******************************************************************
+*/
+
+footer {
+  width: 100%;
+  height: 23vh;
+  background-color: var(--main-accent-color);
+}
+
+.footer-content-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  h4 {
+    color: #fff;
+    font-weight: 500;
+  }
+  .github {
+    text-decoration: underline;
+  }
+}
+
+.socials {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 25%;
+}`, "",{"version":3,"sources":["webpack://./src/css/index.css"],"names":[],"mappings":"AAEA;EACE,SAAS;EACT,UAAU;EACV,SAAS;EACT,6BAA6B;AAC/B;;AAEA;EACE,gEAA0D;EAC1D,2BAA2B;EAC3B,4BAA4B;EAC5B,aAAa;EACb,WAAW;AACb;;AAEA;;;;CAIC;;AAED;EACE,aAAa;EACb,mBAAmB;EACnB,8BAA8B;EAC9B,WAAW;EACX,eAAe;EACf,+CAA+C;EAC/C;IACE,cAAc;IACd,iBAAiB;IACjB,eAAe;EACjB;AACF;;AAEA;EACE,UAAU;EACV,aAAa;EACb,mBAAmB;EACnB,6BAA6B;EAC7B,mBAAmB;EACnB;IACE,gBAAgB;IAChB,6BAA6B;IAC7B;MACE,eAAe;MACf,WAAW;MACX,qBAAqB;MACrB,gBAAgB;IAClB;EACF;AACF;;AAEA;;;;CAIC;;AAED;EACE,WAAW;EACX,uBAAuB;EACvB,mBAAmB;AACrB;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,cAAc;EACd,WAAW;EACX,YAAY;EACZ;IACE,aAAa;IACb,uBAAuB;IACvB,mBAAmB;IACnB,SAAS;IACT,eAAe;IACf,gBAAgB;EAClB;EACA;IACE,aAAa;IACb,uBAAuB;IACvB,mBAAmB;IACnB,WAAW;IACX,mBAAmB;IACnB,cAAc;IACd,kBAAkB;IAClB,4CAA4C;;EAE9C;EACA;IACE,aAAa;IACb,uBAAuB;IACvB,mBAAmB;IACnB,UAAU;IACV,cAAc;IACd,gBAAgB;IAChB,cAAc;IACd,sBAAsB;IACtB,4CAA4C;IAC5C,+BAA+B;IAC/B,gBAAgB;EAClB;AACF;;AAEA;;;;CAIC;;AAED;EACE,WAAW;EACX,WAAW;AACb;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,6BAA6B;EAC7B,WAAW;EACX,WAAW;EACX,sBAAsB;EACtB;IACE,YAAY;IACZ,sBAAsB;IACtB,2BAA2B;IAC3B,mBAAmB;IACnB,cAAc;IACd,YAAY;IACZ,UAAU;IACV;MACE,aAAa;MACb,uBAAuB;MACvB,aAAa;MACb,iBAAiB;MACjB,eAAe;MACf,gBAAgB;IAClB;IACA;MACE,kBAAkB;MAClB,WAAW;MACX,mBAAmB;MACnB,4CAA4C;IAC9C;IACA;MACE,aAAa;MACb,uBAAuB;MACvB,mBAAmB;MACnB,cAAc;MACd,gBAAgB;MAChB,UAAU;MACV,cAAc;MACd,kBAAkB;IACpB;IACA;IACA,cAAc;IACd,aAAa;IACb,sBAAsB;IACtB,4CAA4C;IAC5C,+BAA+B;IAC/B,6BAA6B;IAC7B,gBAAgB;IAChB,eAAe;IACf;EACF;AACF;;AAEA;;;;CAIC;;AAED;EACE,WAAW;EACX,YAAY;EACZ,0CAA0C;AAC5C;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,8BAA8B;EAC9B,mBAAmB;EACnB,WAAW;EACX,YAAY;EACZ;IACE,WAAW;IACX,gBAAgB;EAClB;EACA;IACE,0BAA0B;EAC5B;AACF;;AAEA;EACE,aAAa;EACb,6BAA6B;EAC7B,mBAAmB;EACnB,UAAU;AACZ","sourcesContent":["@import 'variables.css';\n\nhtml, body, nav {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-family: var(--site-font);\n}\n\nbody {\n  background: url('../../dist/images/park.jpg') center/cover;\n  background-position-y: -26%;\n  background-repeat: no-repeat;\n  height: 100vh;\n  width: 100%;\n}\n\n/*\n***************************************************************\n*>>>>>>>>>>>>>>>>>>>>>>>> TOP OF PAGE <<<<<<<<<<<<<<<<<<<<<<<<*\n***************************************************************\n*/\n\nnav {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  width: 100%;\n  height:  8.265%;\n  background-color: var(--secondary-accent-color);\n  .dog-icon {\n    height: 81.44%;\n    margin-left: 1.5%;\n    margin-top: .5%;\n  }\n}\n\n.links-wrap {\n  width: 20%;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-evenly;\n  align-items: center;\n  li {\n    list-style: none;\n    justify-content: space-evenly;\n    a {\n      font-size: 150%;\n      color: #fff;\n      text-decoration: none;\n      font-weight: 550;\n    }\n  }\n}\n\n/*\n****************************************************************\n*>>>>>>>>>>>>>>>>>>>>>>>> HERO SECTION <<<<<<<<<<<<<<<<<<<<<<<<*\n****************************************************************\n*/\n\n.hero-box {\n  height: 75%;\n  justify-content: center;\n  align-items: center;\n}\n\n.hero-items-wrap {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin-top: 2%;\n  width: 100%;\n  height: 100%;\n  h1 {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin: 0;\n    font-size: 335%;\n    font-weight: 350;\n  }\n  .hero-dog {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 65%;\n    object-fit: contain;\n    margin-top: 2%;\n    border-radius: 50%;\n    border: .35vw solid var(--main-accent-color);\n\n  }\n  h2 {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    width: 10%;\n    margin-top: 2%;\n    margin-bottom: 0;\n    padding: .25vw;\n    background-color: #fff;\n    border: .35vw solid var(--main-accent-color);\n    color: var(--main-accent-color);\n    font-weight: 400;\n  }\n}\n\n/*\n****************************************************************\n*>>>>>>>>>>>>>>>>>>>>>>>> MAIN CONTENT <<<<<<<<<<<<<<<<<<<<<<<<*\n****************************************************************\n*/\n\n.main-content-wrap {\n  width: 100%;\n  height: 75%;\n}\n\n.main-content-inner {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-evenly;\n  width: 100%;\n  height: 90%;\n  background-color: #fff;\n  article {\n    display:flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: center;\n    margin-top: 2%;\n    height: 100%;\n    width: 25%;\n    h3 {\n      display: flex;\n      justify-content: center;\n      margin-top: 0;\n      margin-bottom: 5%;\n      font-size: 180%;\n      font-weight: 300;\n    }\n    img {\n      border-radius: 50%;\n      height: 50%;\n      object-fit: contain;\n      border: .25vw solid var(--main-accent-color);\n    }\n    p {\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      margin-top: 5%;\n      margin-bottom: 0;\n      padding: 0;\n      font-size: 90%;\n      text-align: center;\n    }\n    button {\n    margin-top: 5%;\n    padding: .4vw;\n    background-color: #fff;\n    border: .35vw solid var(--main-accent-color);\n    color: var(--main-accent-color);\n    font-family: var(--site-font);\n    font-weight: 400;\n    font-size: 100%;\n    }\n  }\n}\n\n/*\n******************************************************************\n*>>>>>>>>>>>>>>>>>>>>>>>> FOOTER CONTENT <<<<<<<<<<<<<<<<<<<<<<<<*\n******************************************************************\n*/\n\nfooter {\n  width: 100%;\n  height: 23vh;\n  background-color: var(--main-accent-color);\n}\n\n.footer-content-wrap {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  align-items: center;\n  width: 100%;\n  height: 100%;\n  h4 {\n    color: #fff;\n    font-weight: 500;\n  }\n  .github {\n    text-decoration: underline;\n  }\n}\n\n.socials {\n  display: flex;\n  justify-content: space-evenly;\n  align-items: center;\n  width: 25%;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -465,11 +655,12 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `:root {
+  --site-font: "Raleway", sans-serif;
   --main-accent-color: #3F8DA8;
   --secondary-accent-color: #92E0E5;
 }
 
-`, "",{"version":3,"sources":["webpack://./src/css/variables.css"],"names":[],"mappings":"AAAA;EACE,4BAA4B;EAC5B,iCAAiC;AACnC","sourcesContent":[":root {\n  --main-accent-color: #3F8DA8;\n  --secondary-accent-color: #92E0E5;\n}\n\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/css/variables.css"],"names":[],"mappings":"AAAA;EACE,kCAAkC;EAClC,4BAA4B;EAC5B,iCAAiC;AACnC","sourcesContent":[":root {\n  --site-font: \"Raleway\", sans-serif;\n  --main-accent-color: #3F8DA8;\n  --secondary-accent-color: #92E0E5;\n}\n\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
